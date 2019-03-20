@@ -7,6 +7,7 @@ import sys, pygame
 import utils.colors as color
 from levels.main_menu import MainMenuLevel
 from levels.flag_menu import FlagMenuLevel
+from levels.game import GameLevel
 from config import SIZE
 
 # Game type constants
@@ -16,6 +17,8 @@ S2P = "S2P"
 T1P = "T1P"
 FLAG_MENU = "FLAG_MENU"
 MAIN_MENU = "MAIN_MENU"
+
+GAME = "GAME"
 
 # Flag type constants
 FLAG_STATIONARY = "STATIONARY"
@@ -55,7 +58,8 @@ class Game:
             self.level = MainMenuLevel()
         elif level == FLAG_MENU:
             self.level = FlagMenuLevel()
-            
+        elif level == GAME:
+            self.level = 
 
 
 if __name__ == "__main__":
